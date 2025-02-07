@@ -1,0 +1,40 @@
+# node_modules は外部ライブラリが入るフォルダなのでコミット不要
+node_modules/
+
+# ビルド結果の出力ディレクトリ（プロジェクトに合わせて変更）
+dist/
+build/
+
+# ログファイル
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 環境変数ファイル（機密情報が含まれる場合があるため）
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# OS固有の不要ファイル
+.DS_Store
+Thumbs.db
+
+# npm のキャッシュなど
+.npm/
+
+# eslint のキャッシュファイル
+.eslintcache
+
+# Yarn の Integrity ファイル（yarn を使っている場合）
+.yarn-integrity
+
+# その他、テストカバレッジ結果など（必要に応じて）
+coverage/
+
+# その他一時的なファイル
+*.tgz
+
+# sandoboxフォルダ内のpackage-lock.jsonを無視
+sandobox/package-lock.json
